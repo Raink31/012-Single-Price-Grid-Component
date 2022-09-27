@@ -97,6 +97,7 @@ strong{
 .button{
     background-color: hsl(71, 73%, 54%);
     border: none;
+    text-align: center;
     padding: 1rem;
     border-radius: 7px;
     margin-top: 2rem;
@@ -135,6 +136,7 @@ li{
 footer{
     margin-top: 1rem;
     color: hsl(177, 73%, 19%);
+    font-size: 0.9em;
 }
 
 footer a{

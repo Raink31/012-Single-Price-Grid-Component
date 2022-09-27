@@ -94,7 +94,7 @@ strong{
     margin-right: 0.7rem;
 }
 
-button{
+.button{
     background-color: hsl(71, 73%, 54%);
     border: none;
     padding: 1rem;
@@ -103,11 +103,11 @@ button{
     box-shadow: 0 0 20px rgba(74, 121, 114, 0.575);
 }
 
-button:hover{
+.button:hover{
     cursor: pointer;
 }
 
-button a{
+.button a{
     color: white;
     text-decoration: none;
     font-size: 1.4em;

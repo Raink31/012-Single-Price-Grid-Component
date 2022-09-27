@@ -1,0 +1,186 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    max-width: 375px;
+    margin: 0.5rem;
+    text-align: start;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(74, 121, 114, 0.205);
+}
+
+.grid-component{
+    padding: 2rem;
+}
+
+#title{
+    background-color: white;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.4em;
+    margin-bottom: 1.5rem;
+}
+
+.yellow_description{
+    color: hsl(71, 73%, 54%);
+    font-size: 1.05em;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+
+.title_text{
+    color: hsl(221, 9%, 66%);
+    line-height: 30px;
+}
+
+#sub{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#sub h2{
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+}
+
+#sub p{
+    font-size: 1.1em;
+}
+
+#price{
+    display: flex;
+    align-items: center;
+    color: hsla(203, 44%, 93%, 0.692);
+    margin-bottom: 0.5rem;
+}
+
+strong{
+    color: white;
+    font-size: 2.5em;
+    margin-right: 0.7rem;
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(74, 121, 114, 0.575);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+#whyus{
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+}
+
+#whyus h2 {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+    color: hsl(181, 92%, 85%);
+}
+
+li{
+    margin-bottom: 0.2rem;
+}
+
+footer{
+    margin-top: 1rem;
+    color: hsl(177, 73%, 19%);
+}
+
+footer a{
+    color: hsl(177, 77%, 10%);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+    main{
+        max-width: 800px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.6fr 1fr;
+    }
+
+    .grid-component{
+        padding: 3rem;
+    }
+
+    #title{
+        grid-area: 1 / 1 / 2 / 3;
+        padding-right: 7rem;
+    }
+
+    #sub{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #whyus{
+        grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .title_text{
+        font-size: 1.1em;
+    }
+
+    .yellow_description{
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+}
